@@ -2,6 +2,17 @@
 Utility to list the exported functions in an object file i.e. PE, DLL, SYS, COFF, ELF, SO, ...
 
 ## Usage
+```
+Usage: exports.exe <file>...
+
+Arguments:
+  <file>...
+
+Options:
+  -h, --help     Print help
+  -V, --version  Print version
+```
+### Examples
 Single file
 
 `export obj1.dll`
@@ -15,9 +26,8 @@ From cargo
 `cargo run -- obj1.dll obj2.exe`
 
 ### Output
-`exports C:\Windows\System32\ntdll.dll`
-
 ```
+$ exports C:\Windows\System32\ntdll.dll
 \\?\C:\Windows\System32\ntdll.dll
 ├── 0x18000e6e0: A_SHAFinal
 ├── 0x18000e810: A_SHAInit
