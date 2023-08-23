@@ -7,7 +7,6 @@ use std::{
 use clap::{Arg, command, value_parser, ArgAction};
 use object::Object;
 use is_terminal::IsTerminal;
-use console::style;
 use termtree::Tree;
 
 fn main() {
